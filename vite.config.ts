@@ -19,9 +19,9 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: 'http://localhost:9291',  // 请替换为你的后端服务器地址
-        changeOrigin: true,  // 是否改变源
-        // rewrite: (path) => path.replace(/^\/api/, ''),  // 重写路径
+        target: 'http://18.167.241.51:9291',
+        changeOrigin: true,
+        // rewrite: (path) => path.replace(/^\/api/, ''),
       },
     }
   }
